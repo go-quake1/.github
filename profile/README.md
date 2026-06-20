@@ -58,7 +58,7 @@ so the diff between Go and C is auditable.
 - **Reference-mirror traceability.** Every Go file links to the
   tyrquake C function it derives from, by pinned commit + filename.
 - **Provable test protocol.** Carries forward the
-  [godoom](https://github.com/cloud-boot/godoom) 4-gate protocol
+  [godoom](https://github.com/go-doom/engine) 4-gate protocol
   (engine-determinism BYTE-EQUAL · guest-GPU chi² bounded · audio
   events BYTE-EQUAL · audio WAV RMS bounded).
 - **6-arch CI.** All six 64-bit Go targets — `amd64`, `arm64`,
@@ -80,7 +80,7 @@ exactly the workload pure-Go + go-asmgen SIMD is built for.
 
 [cloud-boot](https://github.com/cloud-boot) — the bare-metal TamaGo
 + UEFI demo target. Once the engine is feature-complete, the
-[godoom](https://github.com/cloud-boot/godoom) provable-test
+[godoom](https://github.com/go-doom/engine) provable-test
 discipline carries forward unchanged: same gates, same reference
 recordings, against the same go-virtio + go-asmgen substrate.
 
